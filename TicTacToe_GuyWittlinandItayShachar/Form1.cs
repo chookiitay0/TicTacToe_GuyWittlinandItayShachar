@@ -16,6 +16,10 @@ namespace TicTacToe_GuyWittlinandItayShachar
         private bool m_IsFirstPlayer = true;
         private int tick;
 
+        private oWon oWon = new oWon();
+        private xWon xWon = new xWon();
+
+
         public Form1()
         {
             InitializeComponent();
@@ -168,8 +172,9 @@ namespace TicTacToe_GuyWittlinandItayShachar
                 sign.Enabled = false;
                 if (CheckMatrix(FormToMatrix(), "X"))
                 {
-                    MessageBox.Show("X, You Win");
                     timer1.Stop();
+                    xWon.Show();
+
                 }
             }
             else
@@ -180,8 +185,8 @@ namespace TicTacToe_GuyWittlinandItayShachar
                 sign.Enabled = false;
                 if (CheckMatrix(FormToMatrix(), "0"))
                 {
-                    MessageBox.Show("0, You Win");
                     timer1.Stop();
+                    oWon.Show();
                 }
             }
         }
@@ -218,6 +223,11 @@ namespace TicTacToe_GuyWittlinandItayShachar
         {
             tick++;
             TheSeconds.Text = tick.ToString() + " Seconds";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -73,6 +73,16 @@ namespace TicTacToe_GuyWittlinandItayShachar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Draw {
+            get {
+                object obj = ResourceManager.GetObject("Draw", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap None {
             get {
                 object obj = ResourceManager.GetObject("None", resourceCulture);
@@ -93,9 +103,29 @@ namespace TicTacToe_GuyWittlinandItayShachar.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap oWon {
+            get {
+                object obj = ResourceManager.GetObject("oWon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap X_Button {
             get {
                 object obj = ResourceManager.GetObject("X_Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap xWon {
+            get {
+                object obj = ResourceManager.GetObject("xWon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
